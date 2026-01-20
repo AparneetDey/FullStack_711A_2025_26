@@ -3,54 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Profile</title>
+    <title>Job Finder</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Job Finder</h1>
-            <input type="search" name="search" id="search" placeholder="Search your job...">
-            <button>Search</button>
-            <br>
-            <br>
-            <button>Sign Up</button>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Recommended Jobs</h2>
-            <article>
-                <div>
-                    <h3>Frontend Developer</h3>
-                    <p>XYZ company</p>
-                    <p>Salary - 10K</p>
-                    <button>Send Resume</button>
-                </div>
-                <div>
-                    <h3>Backend Developer</h3>
-                    <p>ABC company</p>
-                    <p>Salary - 30K</p>
-                    <button>Send Resume</button>
-                </div>
-                <div>
-                    <h3>Frontend Intern</h3>
-                    <p>IOP company</p>
-                    <p>Salary - Unpaid</p>
-                    <button>Send Resume</button>
-                </div>
-            </article>
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <h2>Job Finder</h2>
+
+<header>
+    <h1>Job Finder</h1>
+
+    <nav aria-label="Main Navigation">
+        <form>
+            <label for="search">Search Jobs:</label>
+            <input type="search" id="search" placeholder="Job title or company">
+            <select>
+                <option value="">Location</option>
+                <option>Remote</option>
+                <option>Bangalore</option>
+                <option>Delhi</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+
+        <button type="button">Sign Up</button>
+        <button type="button">Login</button>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+
+<section>
+    <h2>Job Categories</h2>
+    <ul>
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Full Stack</li>
+        <li>Internships</li>
+        <li>Remote Jobs</li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+    <h2>Recommended Jobs</h2>
+
+    <article>
+        <h3>Frontend Developer</h3>
+        <p><strong>Company:</strong> XYZ Company</p>
+        <p><strong>Location:</strong> Remote</p>
+        <p><strong>Job Type:</strong> Full Time</p>
+        <p><strong>Experience:</strong> 1–3 Years</p>
+        <p><strong>Salary:</strong> ₹10K</p>
+        <button>Send Resume</button>
+        <button>View Details</button>
+    </article>
+
+    <article>
+        <h3>Backend Developer</h3>
+        <p><strong>Company:</strong> ABC Company</p>
+        <p><strong>Location:</strong> Bangalore</p>
+        <p><strong>Job Type:</strong> Full Time</p>
+        <p><strong>Experience:</strong> 3–5 Years</p>
+        <p><strong>Salary:</strong> ₹30K</p>
+        <button>Send Resume</button>
+        <button>View Details</button>
+    </article>
+
+    <article>
+        <h3>Frontend Intern</h3>
+        <p><strong>Company:</strong> IOP Company</p>
+        <p><strong>Location:</strong> Delhi</p>
+        <p><strong>Job Type:</strong> Internship</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <p><strong>Salary:</strong> Unpaid</p>
+        <button>Send Resume</button>
+        <button>View Details</button>
+    </article>
+
+</section>
+
+<hr>
+
+<section>
+    <h2>Featured Company</h2>
+    <article>
+        <h3>TechNova Pvt Ltd</h3>
+        <p>Leading software company hiring freshers and experienced developers.</p>
+        <button>View Openings</button>
+    </article>
+</section>
+
+<hr>
+
+<section>
+    <h2>User Testimonials</h2>
+    <blockquote>
+        “I got my first job through Job Finder. Simple and effective.”
+        <footer>— Aman, Frontend Developer</footer>
+    </blockquote>
+
+    <blockquote>
+        “Best platform for internships.”
+        <footer>— Riya, Student</footer>
+    </blockquote>
+</section>
+
+<hr>
+
+<section>
+    <h2>Subscribe for Job Alerts</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+</main>
+
+<hr>
+
+<footer>
+    <h2>Job Finder</h2>
+
+    <nav aria-label="Footer Navigation">
         <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Instagram</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
         </ul>
-        <p>&copy; All Rights Reserved 2026.</p>
-    </footer>
+    </nav>
+
+    <nav aria-label="Social Links">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
+
+    <p>&copy; 2026 Job Finder. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
