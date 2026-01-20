@@ -5,39 +5,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio - Aparneet Dey</title>
+	<link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 	<header>
-		<h1>APARNEET DEY</h1>
-		<p>Welcome to my portfolio, I am a Fullstack Developer</p>
-		<img src="./Gemini_Generated_Image_p6yrv9p6yrv9p6yr (2).png" alt="Profile" width="100px" height="100px">
+		<div>
+			<h1>APARNEET DEY</h1>
+			<p>Welcome to my portfolio, I am a Fullstack Developer</p>
+		</div>
+		<img src="./Gemini_Generated_Image_p6yrv9p6yrv9p6yr (2).png" alt="Profile">
 	</header>
-	<hr>
-	<nav>
-		<a href="https://github.com/AparneetDey">GITHUB</a> |
-		<a href="leetcode.com/AparneetDey">LEETCODE</a> |
-		<a href="linkedin.com/AparneetDey">LINKEDIN</a>
+	<nav class="navbar">
+		<a href="#projects">Projects</a>
+		<a href="#tech">Tech Stack</a>
+		<a href="#education">Education</a>
+		<a href="#contact">Contact Me</a>
 	</nav>
-	<hr>
 	<main>
-		<section>
+		<section id="projects">
 			<h2>PROJECTS</h2>
-			<article>
-				<h3>BitArcade</h3>
-				<p>Game searching platform</p>
-				<a href="https://github.com/AparneetDey/BitArcade-v2" target="_blank">GitHub Repository</a>
-			</article>
-			<article>
-				<h3>CopyTube</h3>
-				<p>Video Sharing Platform</p>
-				<a href="https://github.com/AparneetDey/CopyTube" target="_blank">GitHub Repository</a>
+			<article class="projectContainer">
+				<div class="projectCard">
+					<img src="./image2.png" alt="bitarcade">
+					<h3>BitArcade</h3>
+					<p>Game searching platform</p>
+					<a href="https://github.com/AparneetDey/BitArcade-v2" target="_blank">GitHub Repository</a>
+				</div>
+				<div class="projectCard">
+					<img src="./image1.png" alt="copytube">
+					<h3>CopyTube</h3>
+					<p>Video Sharing Platform</p>
+					<a href="https://github.com/AparneetDey/CopyTube" target="_blank">GitHub Repository</a>
+				</div>
 			</article>
 		</section>
-		<hr>
-		<section>
+		<section id="tech">
 			<h2>TECH STACK</h2>
-			<ul>
+			<ul class="stack">
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>Javascript</li>
@@ -51,8 +56,7 @@
 				<li>MongoDB</li>
 			</ul>
 		</section>
-		<hr>
-		<section>
+		<section id="education">
 			<h2>EDUCATION</h2>
 			<table border="5">
 				<thead>
@@ -93,30 +97,31 @@
 				</tbody>
 			</table>
 		</section>
-		<hr>
-		<section>
+		<section id="contact">
 			<h2>CONTACT ME</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name" required placeholder="Enter your name">
-				<br><br>
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email" required placeholder="Enter your email">
-				<br><br>
-				<label for="reason">Reason:</label>
-				<select name="reason" id="reason">
-					<option value="">-Select an option-</option>
-					<option value="freelance">Freelance</option>
-					<option value="jobOffer">Job Offer</option>
-					<option value="training">Training</option>
-				</select>
-				<br><br>
-				<label for="details">Details:</label>
-				<textarea name="details" id="details" placeholder="Provide some details"></textarea>
-			</form>
+			<article class="formContainer">
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" required placeholder="Enter your name">
+					<br><br>
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required placeholder="Enter your email">
+					<br><br>
+					<label for="reason">Reason:</label>
+					<select name="reason" id="reason">
+						<option value="">-Select an option-</option>
+						<option value="freelance">Freelance</option>
+						<option value="jobOffer">Job Offer</option>
+						<option value="training">Training</option>
+					</select>
+					<br><br>
+					<label for="details">Details:</label>
+					<textarea name="details" id="details" placeholder="Provide some details"></textarea>
+					<button type="submit">Contact</button>
+				</form>
+			</article>
 		</section>
 	</main>
-	<hr>
 	<footer>
 		<p>&copy; All Rights Reserved</p>
 		<p>Address: Chandigarh University</p>

@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: antiquewhite;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 1000px;
+    border: 2px solid black ;
+}
+
+header p {
+    font-weight: 600;
+    color: rgb(104, 104, 104);
+}
+
+.navbar {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(40, 149, 244);
+    transition: all 100ms ease;
+}
+.navbar a:hover {
+    color: rgb(0, 136, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 2rem;
+}
+
+#projects h2 {
+    color: red;
+}
+
+.projectContainer {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.projectCard {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: rgb(49, 49, 49);
+}
+
+.projectCard img {
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.projectCard h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.projectCard p {
+    color: rgb(161, 161, 161);
+    margin-bottom: 12px;
+}
+
+.projectCard a {
+    text-decoration: none;
+    font-weight: 600;
+    color: aqua;
+}
+.projectCard a:hover {
+    color: rgb(0, 255, 191);
+}
+
+#tech h2 {
+    color: blue;
+}
+
+.stack {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stack li {
+    list-style: none;
+    border: 3px solid black;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: antiquewhite;
+    transition: all 250ms ease-in-out;
+}
+
+.stack li:hover {
+    background-color: rgb(250, 212, 162);
+    transform: translateY(-6px);
+}
+
+#education h2 {
+    color: green;
+}
+
+#contact h2 {
+    color: purple;
+}
+
+.formContainer {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer form {
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+
+.formContainer form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.formContainer form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.formContainer form button {
+    padding: 12px;
+    font-size: 20px;
+}
