@@ -129,6 +129,16 @@ main {
     color: green;
 }
 
+#education table {
+    width: 100%;
+    font-size: 18px;
+    border: dotted;
+}
+
+#education table tr td, th {
+    padding: 12px;
+}
+
 #contact h2 {
     color: purple;
 }
@@ -162,6 +172,67 @@ main {
 }
 
 .formContainer form button {
+    margin-top: 12px;
     padding: 12px;
     font-size: 20px;
+    background-color: rgb(255, 222, 57);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.formContainer form button:hover {
+    background-color: rgb(255, 213, 0);
+    transform: translateY(-6px);
+    box-shadow: 0 5px 0px rgb(140, 117, 0);
+}
+
+.formContainer fomr button:active {
+    background-color: rgb(161, 134, 0);
+    transform: translateY(-1px);
+    box-shadow: 0 1px 0px rgb(140, 117, 0);
+}
+
+.formContainer form select {
+    padding: 12px;
+}
+
+.formContainer form textarea {
+    height: 150px;
+    resize: horizontal;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(40, 149, 244);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul li:hover a {
+    columns: rgb(40, 136, 255);
+}
+
+footer div {
+    color: rgb(89, 89, 89);
 }
