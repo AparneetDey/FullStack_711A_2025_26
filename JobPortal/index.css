@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #1e293b;
+    color: white;
+    padding: 15px 20px;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav input,
+.nav select,
+.nav button {
+    padding: 6px;
+}
+
+/* Main */
+.main {
+    padding: 20px;
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* Job cards */
+.card {
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.list li {
+    list-style: none;
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: #1e293b;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 100ms ;
+}
+
+.list li:hover {
+    transform: translateY(-6px);
+}
+
+/* Buttons */
+button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+.footer {
+    background: #111827;
+    color: white;
+    padding: 15px 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
