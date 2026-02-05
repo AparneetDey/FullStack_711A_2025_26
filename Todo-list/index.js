@@ -17,6 +17,7 @@ function renderTodos() {
         <li>
             <span class="todo-text">${todo}</span>
             <button class="delete-btn" onclick="deleteTodo(${index})">Delete</button>
+            <button class="update-btn" onclick="updateTodo(${index})">Update</button>
         </li>
     `).join('');
 }
@@ -41,6 +42,13 @@ function deleteTodo(index) {
         todos.splice(index, 1);
         renderTodos();
     }
+}
+
+function updateTodo(index) {
+    todoInput.value = todos[index];
+    todoInput.focus();
+    todos.splice(index, 1);
+    renderTodos();
 }
 
 // Event listeners
